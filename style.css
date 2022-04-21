@@ -1,5 +1,5 @@
 body,html{
-   background-color: #90a6ff; 
+   background-color: #0d0d36; 
    min-width: 1200;
     margin:0;
     padding:0;
@@ -11,10 +11,11 @@ header{
   
 }
 nav{
-    display:flex;
-    justify-content: space-between;
+    display:flex;flex-direction: row;
+  justify-content: space-between;
+flex-wrap: nowrap;
    /* display text issue resolved */
-    gap: 2.5rem;
+    gap: 4.5rem;
     padding:0;
     height: 3vh;
   
@@ -54,7 +55,7 @@ nav{
 border-bottom: 2px solid Red;
 }
 
-span{
+.specs{
 background:linear-gradient(180deg,#10FFC6 0%,#10FFFF 100%);
 border-radius:2px;
 color:black;
@@ -125,19 +126,145 @@ nav div a{
 } */
 
 /* packs heading */
-b{
-    color: #cac7ff;
-}
-.heading{
-  margin:100px 200px;
-    color:wheat;   
-}
-.heading div{
+
+.heading {
+    margin-top:90px;
+    margin-left: 200px;
     font-size:60px;
-    font-weight: 1000px;
     color:#ffffff;
   font-family: 'Montserrat', sans-serif;
+}
+.sub-h{
+display: flex;
+flex-wrap: wrap;
+}
+hr{
+ border-top:0.5px solid grey;
+  opacity: 0.2;
+width:1100px;
+}
+
+.sub-h p{
+color:grey;
+font-family: 'Montserrat', sans-serif;
+margin-right:300px;
+line-height: 24.38px;
+text-align: justify;
+font-size:20px;
+width:1228px;
+white-space: normal;
+height: 48px;
+margin-left:200px;
+}
+.packs{
+    margin-top:3.2rem;
+    margin-left:12.5rem;
+    margin-bottom: 0;
+}
+.packs h2{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+.packs p{
+    color:grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    line-height: 17px;
+    font-weight:500;
+    margin-top:0px;
+}
+.img-fluid{
+   width:80%;
+   height:auto;
+   object-fit: cover;
+   object-position: bottom;
+}
+@media screen and (max-width:800px) 
+{
+    .packs  {
+        padding:0px 20px;
+    }
+    .packs img{
+        width:100%;
+        height:auto;
+    }
+}
+@media   (max-width:1000px)
+{
+    .sub-h 
+    {
+    padding:0px 0px 20px 0px;
+   
+    }
+}
+
+/* cards css */
+
+.cards{
+    margin:0 auto;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left:200px;
+    flex-flow: wrap;
+gap:20px;
+font-family: sans-serif;
+}
+.card_content{
+   padding:12px;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   transform: none;
+}
+.card_image{
+    width:100%;
+    display: block;
+}
+.card-title{
+    font-size:24px;
+    color:#ffffff;
+    font-weight: 500 bold;
+    line-height: 21.94px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+}
+.card-grade
+{
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    color:#ffffff;
+    opacity: 0.8px;
+}
+.card-date{
+    color: #10EEDD;
+    font-family: 'Montserrat', sans-serif;
 
 }
-h1{
+
+.card-price
+{
+    margin-top:10px;
+color:#ffffff;
+font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34px;
+text-align: left;
+
+}
+@media screen and (max-width:500px) {
+    .card{
+        width:80%;
+    }
+}
+@media screen and (max-width:1000px)
+{
+    .card{
+        width:50%;
+        height: auto;
+    }
 }
