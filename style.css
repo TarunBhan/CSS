@@ -3,7 +3,8 @@ body,html{
    min-width: 1200;
     margin:0;
     padding:0;
-    
+    max-width: 100%;
+    overflow-x: hidden;
 }
 header{
     width:100vh;  
@@ -46,13 +47,14 @@ flex-wrap: nowrap;
     margin:2px;
     color:#ffffff; text-transform: uppercase;
     font-weight: 700 bold;
-     line-height: 14.63px;
-     font-size: 12px;
-     font-family: 'Montserrat', sans-serif;
-   
+    line-height: 14.63px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
- .active ,.options a:hover {
-border-bottom: 2px solid Red;
+ .active {
+     margin-top:19px;
+    background: linear-gradient(180deg, rgba(255, 153, 109, 0) 38.13%, rgba(255, 0, 0, 0.2) 100%),radial-gradient(51.96% 85.48% at 50% 100%, rgba(255, 153, 109, 0.5) 0%, rgba(255, 0, 0, 0.5) 20.94%, rgba(255, 0, 0, 0) 100%);
+
 }
 
 .specs{
@@ -130,7 +132,9 @@ nav div a{
 .heading {
     margin-top:90px;
     margin-left: 200px;
-    font-size:60px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
     color:#ffffff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -147,13 +151,13 @@ width:1100px;
 .sub-h p{
 color:grey;
 font-family: 'Montserrat', sans-serif;
-margin-right:300px;
-line-height: 24.38px;
-text-align: justify;
 font-size:20px;
 width:1228px;
+font-weight:500;
+margin: auto;
+line-height: 24px;
 white-space: normal;
-height: 48px;
+position: relative;
 margin-left:200px;
 }
 .packs{
@@ -501,4 +505,90 @@ font-style: normal;
     max-width: 1020px;
     height: auto;
     opacity: 0.6;
+}
+.animate{
+    background: linear-gradient(180deg, rgba(255, 153, 109, 0) 38.13%, rgba(255, 0, 0, 0.2) 100%),radial-gradient(51.96% 85.48% at 50% 100%, rgba(255, 153, 109, 0.5) 0%, rgba(255, 0, 0, 0.5) 20.94%, rgba(255, 0, 0, 0) 100%);
+border-radius: 2px solid rgb(238, 36, 36);
+    height: 2px;
+    
+    width: 100%;
+    border-radius:60px;
+    margin-top:10px;
+}
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+   position: relative;
+height:auto;
+    flex-wrap:wrap;
+    gap:3rem;
+    background-color: rgb(255, 255, 255);
+    justify-self: center;
+}
+.rario-desc{
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    flex-wrap: wrap;
+}
+.rario-desc span{
+    font-size:12px;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    color:#978484;
+margin: 5px;
+margin-left:90px;
+}
+.rario-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    cursor: inherit;
+}
+.rario-links div{
+    font-family: 'Montserrat';
+    font-style: normal;
+     color: rgb(84, 79, 79);
+line-height:20px;
+    padding-right:10px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor:pointer;
+    font-family: 'Montserrat',sans-serif;
+}
+.container-links{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    padding:0;
+    margin-top:24px;
+    gap:1rem;
+}
+.b{
+    margin-left:23px;
+}
+.icc-logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;}
+#icc-1{
+    width:40px;
+
+}
+#icc-2{
+    width:40px;
+
+}
+.img-logo img{
+width:78px;
+
+top:10%;
+}
+.footer-design{
+    position: absolute;
+right:0;
+bottom:0;
 }
