@@ -1,5 +1,5 @@
 body,html{
-   background-color: #0d0d36; 
+   background-color:#00011b;
    min-width: 1200;
     margin:0;
     padding:0;
@@ -12,15 +12,15 @@ header{
   
 }
 nav{
-    display:flex;flex-direction: row;
+    display:flex;
+    flex-direction: row;
   justify-content: space-between;
-flex-wrap: nowrap;
+    flex-wrap: wrap;
    /* display text issue resolved */
-    gap: 4.5rem;
+   margin-top:2rem;
     padding:0;
     height: 3vh;
   
-
 }
 
 .logo i{
@@ -52,7 +52,7 @@ flex-wrap: nowrap;
     font-family: 'Montserrat', sans-serif;
 }
  .active {
-     margin-top:19px;
+     margin-top:4rem;
     background: linear-gradient(180deg, rgba(255, 153, 109, 0) 38.13%, rgba(255, 0, 0, 0.2) 100%),radial-gradient(51.96% 85.48% at 50% 100%, rgba(255, 153, 109, 0.5) 0%, rgba(255, 0, 0, 0.5) 20.94%, rgba(255, 0, 0, 0) 100%);
 
 }
@@ -131,7 +131,7 @@ nav div a{
 
 .heading {
     margin-top:90px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     font-weight: 800;
     font-size: 60px;
     line-height: 73px;
@@ -146,6 +146,7 @@ hr{
  border-top:0.5px solid grey;
   opacity: 0.2;
 width:1100px;
+margin-top: 3rem;
 }
 
 .sub-h p{
@@ -158,11 +159,11 @@ margin: auto;
 line-height: 24px;
 white-space: normal;
 position: relative;
-margin-left:200px;
+/* margin-left:200px; */
 }
 .packs{
     margin-top:3.2rem;
-    margin-left:12.5rem;
+    /* margin-left:12.5rem; */
     margin-bottom: 0;
 }
 .packs h2{
@@ -210,7 +211,7 @@ margin-left:200px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left:200px;
+    /* margin-left:200px; */
     flex-flow: wrap;
     gap:20px;
     font-family: sans-serif;
@@ -277,7 +278,7 @@ text-align: left;
 .t{
     justify-content: flex-start;
     display: flex;
-margin-left:200px;
+/* margin-left:200px; */
     flex-wrap: wrap;
     gap:1.3rem;
  }
@@ -316,7 +317,7 @@ left:120px;
  font-size:20px;
  margin:0;
  line-height: 24px;
- 
+ padding:4px;
  position: absolute;
  top:10px;
  z-index: 2;
@@ -332,7 +333,7 @@ left:120px;
      display: flex;
      flex-direction: row;
      justify-content: flex-start;
-     margin-left:200px;
+     /* margin-left:200px; */
      flex-flow: wrap;
      gap:20px;
      font-family: sans-serif;
@@ -469,7 +470,7 @@ img{
 .ques-heading
 {
 overflow: auto;
-margin:50px 0px 50px 200px; 
+margin:50px 0px 50px 0px; 
 }
 .ques-heading div{
 margin:0px;
@@ -478,11 +479,10 @@ margin:0px;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
-    
     line-height: 63px;
 }
 .sub-ques{
-    margin-left:200px;
+    /* margin-left:200px; */
     margin-top:50px;
 }
 .sub-ques h3{
@@ -506,22 +506,33 @@ font-style: normal;
     height: auto;
     opacity: 0.6;
 }
-.animate{
-    background: linear-gradient(180deg, rgba(255, 153, 109, 0) 38.13%, rgba(255, 0, 0, 0.2) 100%),radial-gradient(51.96% 85.48% at 50% 100%, rgba(255, 153, 109, 0.5) 0%, rgba(255, 0, 0, 0.5) 20.94%, rgba(255, 0, 0, 0) 100%);
-border-radius: 2px solid rgb(238, 36, 36);
-    height: 2px;
+.border-bottom{
+    border-bottom: 2px solid red; 
+    position: absolute;
+margin-top: 10px;
+width:45px;
+height: 2px;
+border-radius: 50px;
+background: linear-gradient(180deg, rgba(255, 153, 109, 0) 38.13%, rgb(255 0 0 / 59%) 100%);}
+.link1{
+    align-items: center;
     
-    width: 100%;
-    border-radius:60px;
-    margin-top:10px;
+    position: relative;
+    justify-content: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size:12px;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255, 153, 109, 0) 43.13%, rgba(250, 0, 0, 0.673) 100%);
+    text-transform: uppercase;
 }
+
 /* FOOTER */
 
 footer{
     display: flex;
     align-items: center;
    position: relative;
-height:auto;
+height:166px;
     flex-wrap:wrap;
     gap:3rem;
     background-color: rgb(255, 255, 255);
@@ -591,4 +602,8 @@ top:10%;
     position: absolute;
 right:0;
 bottom:0;
+}
+.main-div{
+    width: 80%;
+    margin:0 auto;
 }
